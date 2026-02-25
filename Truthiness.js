@@ -5,11 +5,15 @@
    console.log(Boolean(-1));        // true   → any non-zero number (positive or negative) is truthy
    console.log(Boolean(undefined)); // false  → undefined is falsy
 
-2. const count = 0;
+2. // Prediction: Declare a constant `count` with value 0
+   const count = 0;
 
-  // Check if count is defined (not null or undefined)
-  if (count !== null && count !== undefined) {
-      console.log(`You have ${count} items.`);
-  } else {
-      console.log("No items found.");
-  }
+   // Prediction: Check if `count` is NOT null and NOT undefined
+   // This will be true for 0, so the if block will run
+   if (count !== null && count !== undefined) {
+       // Prediction: Will log "You have 0 items."
+       console.log(`You have ${count} items.`);
+   } else {
+       // Prediction: This will NOT run because count is defined
+       console.log("No items found.");
+   }
